@@ -1,0 +1,520 @@
+/* General Styles */
+body {
+    background: linear-gradient(to bottom, black, orange, black); /* Black gradient on top and bottom */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: orange;
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: black;
+    color: orange;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(255, 165, 0, 0.5);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(255, 145, 0);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: rgb(0, 0, 0);
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to bottom, black, orange, black); /* Black fades to orange to black */
+    color: rgb(0, 0, 0);
+}
+
+.hero-text {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 165, 0, 0.5);
+}
+
+.about-content {
+    text-align: center;
+    color: black;
+    margin-top: 40px;
+}
+
+.about-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.about-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: black;
+}
+
+.about-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.expect-content {
+    text-align: center;
+    color: black;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.expect-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.expect-content ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    display: inline-block;
+}
+
+.expect-content li {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.expect-content p {
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: black;
+}
+
+.hero-text button {
+    background-color: black;
+    color: orange;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.hero-text button:hover {
+    background-color: orange;
+    color: black;
+}
+
+/* About Section */
+#about {
+    padding: 40px 20px;
+    background:linear-gradient(to bottom, orange, black); /* Orange fades to black */
+    text-align: center;
+    color: black;
+}
+
+#about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: black;
+}
+
+#about p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: rgb(0, 0, 0);
+}
+
+#about img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Tickets Section */
+#tickets {
+    padding: 40px 20px;
+    background: linear-gradient(to bottom, black, orange, black); /* Orange fades to black */
+    text-align: center;
+    color: black;
+}
+
+#tickets h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#tickets button {
+    background-color: black;
+    color: orange;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#tickets button:hover {
+    background-color: orange;
+    color: black;
+}
+
+/* Contact Section */
+#contact {
+    padding: 40px 20px;
+    background: linear-gradient(to top, black, orange, black); /* Black gradient on the sides */
+    text-align: center;
+    color: orange;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 165, 0, 0.5);
+}
+
+#contact form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: orange;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid orange;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: black;
+    color: orange;
+}
+
+#contact form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: orange;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid orange;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: black;
+    color: orange;
+}
+
+#contact form button {
+    background-color: orange;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contact form button:hover {
+    background-color: black;
+    color: orange;
+}
+
+#contact .contact-box-text {
+    max-width: 900px; /* longer container */
+    margin: 0 auto 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.85);
+    border: 2px solid orange;
+    border-radius: 12px;
+    text-align: center;
+}
+
+#contact .contact-box-text p {
+    color: orange;
+    font-size: 1.2em; /* bigger font */
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, black, orange); /* Gradient background */
+    color: black;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: black;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: orange;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+/* FAQ Section */
+#faq {
+    background-color: white;
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+#faq h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: black;
+}
+
+#faq p {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.faq-item {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 5px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.faq-item h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.faq-item p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: black;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: orange;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: blue; /* Default blue for links */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/* Directions Section */
+#directions {
+    background-color:linear-gradient(to bottom, black, orange, black); /* Gradient background */
+    padding: 40px 20px;
+    text-align: center; /* Center all text in the section */
+    color: rgb(0, 0, 0)
+}
+
+#directions h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: rgb(255, 166, 0);
+}
+#directions h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color:orange;
+}
+
+#directions p {
+    font-size: 1.4em;
+    margin-bottom: 30px;
+    color:black;
+}
+
+.direction-item {
+    margin: 20px auto; /* Center the boxes horizontally */
+    padding: 20px;
+    border: 5px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Center text inside each box */
+    max-width: 900px; /* Set the maximum width of the boxes */
+}
+
+.direction-item h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.direction-item p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: black;
+}
+
+/* Image Styling */
+#directions img {
+    max-width: 200%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Gallery Section */
+#gallery {
+    background-color:linear-gradient(to bottom, black, orange, black); /* Gradient background */
+    padding: 40px 20px;
+    text-align: center;
+    color: orange;
+}
+
+#gallery h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: orange;
+}
+
+#gallery p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: orange;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: orange;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: blue;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
