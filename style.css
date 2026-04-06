@@ -48,13 +48,25 @@ nav ul li a:hover {
         padding: 10px;
     }
 
+    nav ul {
+        justify-content: flex-start;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+    }
+
     nav ul li {
+        flex: 0 0 auto;
         margin: 0 8px;
     }
 
     nav ul li a {
         font-size: 0.8em;
         padding: 5px 8px;
+    }
+
+    nav ul::-webkit-scrollbar {
+        display: none;
     }
 }
 
