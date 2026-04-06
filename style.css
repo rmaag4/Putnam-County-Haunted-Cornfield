@@ -42,6 +42,27 @@ nav ul li a:hover {
     color: rgb(0, 0, 0);
 }
 
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    nav {
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    nav ul li a {
+        font-size: 1.1em;
+        padding: 8px 12px;
+    }
+}
+
 /* Hero Section */
 .hero {
     text-align: center;
@@ -483,10 +504,38 @@ footer a:hover {
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    gap: 30px;
     margin: 0 auto;
     max-width: 1200px;
+}
+
+.gallery-row {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(180px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.gallery-row.center-row {
+    grid-template-columns: repeat(3, minmax(180px, 1fr));
+    justify-content: center;
+}
+
+@media (max-width: 1000px) {
+    .gallery-row {
+        grid-template-columns: repeat(3, minmax(150px, 1fr));
+    }
+
+    .gallery-row.center-row {
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 700px) {
+    .gallery-row,
+    .gallery-row.center-row {
+        grid-template-columns: 1fr;
+    }
 }
 
 .gallery-grid img {
