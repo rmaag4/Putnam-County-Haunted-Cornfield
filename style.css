@@ -1,11 +1,15 @@
 /* General Styles */
 body {
     background: linear-gradient(to bottom, black, orange, black); /* Black gradient on top and bottom */
-    font-family: 'Arial', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     color: orange;
     scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
 }
 
 /* Navigation Bar */
